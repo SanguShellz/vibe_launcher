@@ -1,0 +1,10 @@
+global_variable = 100
+
+def my_function():
+    local_variable = 50
+    print(global_variable)  # This works
+    print(local_variable)   # This works too
+
+my_function()
+print(global_variable)  # This works
+# print(local_variable)  # This would result in an error because local_variable is not accessible here.

@@ -1,0 +1,11 @@
+# Define a variable for the file name
+file_name = "my_program"
+
+# Define the file extension
+file_extension = ".exe"
+
+# Concatenate the variable and extension to create the complete file name
+complete_file_name = file_name + file_extension
+
+# Use the complete file name in your script
+print("Running:", complete_file_name)

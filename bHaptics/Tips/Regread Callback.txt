@@ -1,0 +1,15 @@
+from ahk import AHK
+ahk = AHK()
+
+key = 'HKEY_CURRENT_USER\SOFTWARE\some-key'
+value_name = 'some-value-name'
+check_interval = 1
+def my_callback(value):
+    print('it exists:', value)
+while True:
+    time.sleep(check_interval)
+    try:
+        val = ahk.reg_read(key, value)
+        my_callback(val)
+    except:
+        continue

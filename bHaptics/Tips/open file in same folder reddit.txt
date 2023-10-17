@@ -1,0 +1,8 @@
+import os
+
+script_directory = os.path.dirname(__file__)
+file_name = "your_file.txt"  # Replace with your actual file name
+file_path = os.path.join(script_directory, file_name)
+
+with open(file_path, 'r') as file:
+    file_contents = file.read()
